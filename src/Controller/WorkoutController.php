@@ -9,7 +9,7 @@ use App\Service\MessageGenerator;
 
 class WorkoutController extends AbstractController
 {
-    #[Route('/workout')]
+    #[Route('/workout', name:'workout')]
     public function new(MessageGenerator $messageGenerator): Response
     {
         $challenge = $messageGenerator->getRandomChallenge();

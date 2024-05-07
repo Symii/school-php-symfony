@@ -9,6 +9,10 @@
 <div class="container">
     <h3 class="mt-5">Product List</h3>
     <hr>
+    {% if message is defined %}
+    <p class="alert alert-success">{{ message }}</p>
+    {% endif %}
+    
     <table class="table table-striped table-dark">
     <thead>
         <tr>

@@ -1,0 +1,10 @@
+{{ form_start(form) }}
+    {{ form_errors(form) }}
+
+    {{ form_row(form.name) }}
+    {{ form_row(form.price) }}
+    {{ form_row(form.description) }}
+    {{ form_row(form.shortUrl) }}
+
+    {{ form_row(form.save, { 'label': 'Create Product' }) }}
+{{ form_end(form) }}
